@@ -398,6 +398,26 @@ DFlash & TurboQuant in llama.cpp with up to 3x faster generation and 7.5x more K
 
 ## Model & Feature Extensions
 
+### [heterodoxin/AbliteratedOutTheBox](https://github.com/heterodoxin/AbliteratedOutTheBox)
+
+<p>
+  <a href="https://github.com/heterodoxin/AbliteratedOutTheBox">
+    <img src="https://img.shields.io/github/stars/heterodoxin/AbliteratedOutTheBox?style=social" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/heterodoxin/AbliteratedOutTheBox">
+    <img src="https://img.shields.io/github/last-commit/heterodoxin/AbliteratedOutTheBox" alt="Last commit">
+  </a>
+</p>
+
+A fork that removes model refusals at inference time with a gated projection hook, no fine-tuning and no separate abliterated model. It reads the refusal direction from each prompt and edits only when a gate fires, leaving other prompts bit-identical to the base model.
+
+**Features:**
+- Inference-time abliteration via a hook at the build_cvec layer-output site
+- Fit-free: per-prompt directions, no training and no extra files
+- Architecture-universal, works on any llama.cpp-supported model
+
+---
+
 ### [Mintplex-Labs/prism-ml-llama.cpp](https://github.com/Mintplex-Labs/prism-ml-llama.cpp)
 
 <p>
